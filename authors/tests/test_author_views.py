@@ -41,7 +41,7 @@ class AuthorViewTests(AuthorTestBase):
 
     def test_author_profile_view_function(self):
         view = resolve(reverse('authors:profile'))
-        self.assertIs(view.func, views.profile)
+        self.assertIs(view.func.view_class, views.ProfileView)
 
     def test_author_profile_view_function_template(self):
         self.make_author(username=self.username, password=self.password)

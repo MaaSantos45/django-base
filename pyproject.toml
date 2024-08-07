@@ -35,8 +35,8 @@ build-backend = "setuptools.build_meta"
 packages = [
     "core",
     "static",
-    "authors",
-    "recipes",
+#    "authors",
+#    "recipes",
     "templates",
     "static_base"
 ]
